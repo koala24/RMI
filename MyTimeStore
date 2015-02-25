@@ -1,0 +1,28 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package client;
+
+import java.io.Serializable;
+import server.TimeStore;
+
+/**
+ *
+ * @author bbhertri
+ */
+public class MyTimeStore implements TimeStore, Serializable {
+   private String time;
+   
+   public MyTimeStore() {
+       
+   }
+   
+   public void setTime(String time) {
+       this.time = time;
+   }
+   
+   public String getTime() {
+       return this.time;
+   }
+}
